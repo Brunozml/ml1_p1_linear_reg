@@ -3,12 +3,12 @@ import utils
 import numpy as np
 
 #-------------------------------------------------------------------------------
-# Data loading. There is no need to edit code in this section.
+# Data loading.
 #-------------------------------------------------------------------------------
 
-train_data = utils.load_data('reviews_train.tsv')
-val_data = utils.load_data('reviews_val.tsv')
-test_data = utils.load_data('reviews_test.tsv')
+train_data = utils.load_data('data/reviews_train.tsv')
+val_data = utils.load_data('data/reviews_val.tsv')
+test_data = utils.load_data('data/reviews_test.tsv')
 
 train_texts, train_labels = zip(*((sample['text'], sample['sentiment']) for sample in train_data))
 val_texts, val_labels = zip(*((sample['text'], sample['sentiment']) for sample in val_data))
